@@ -95,7 +95,7 @@
   <main>
     <article>
       <h1>AppPin 隐私政策</h1>
-      <p class="meta">生效日期：2026 年 5 月 20 日</p>
+      <p class="meta">生效日期：2026 年 5 月 24 日</p>
 
       <p class="notice">AppPin 是一款用于发现、收藏、整理和追踪 App Store 应用信息的工具。我们目前不运营自有服务器，不提供账号体系，也不会主动收集可识别个人身份的信息。</p>
 
@@ -113,13 +113,20 @@
       <p>AppPin 会访问 Apple 提供的公开接口，以搜索 App、展示榜单、查询 App 详情并刷新追踪信息。这些请求可能包含你输入的搜索关键词、App ID、地区代码等必要参数。相关数据处理由 Apple 的隐私政策约束。</p>
       <p>当你主动使用 iCloud 同步功能时，收藏数据会通过 Apple iCloud 保存到与你 Apple ID 关联的 iCloud 空间中。iCloud 数据的存储、同步和安全机制由 Apple 提供。</p>
       <p>当你通过 iOS 系统分享面板把 App Store 链接发送到 AppPin 时，AppPin 会读取该分享内容中的链接或文本，用于识别目标 App 并保存到你的收藏库。主 App 与分享扩展之间会通过系统提供的 App Group 容器共享必要的收藏快照。</p>
+      <p>AppPin 使用以下第三方库或 SDK：</p>
+      <ul>
+        <li>Alamofire：用于发起网络请求，帮助 AppPin 访问 Apple 公开接口。Alamofire 本身不作为独立第三方服务接收或存储你的数据。</li>
+        <li>SnapKit：用于构建 App 界面布局。SnapKit 不收集、传输或存储个人信息。</li>
+        <li>腾讯 Bugly SDK：用于发现并修复崩溃问题、提升 App 稳定性。Bugly 可能在 App 发生崩溃或异常时收集与诊断相关的信息，例如设备型号、操作系统版本、App 版本、崩溃日志、异常堆栈、网络状态以及 Bugly 为稳定性分析生成的设备标识等。我们不会将 Bugly 用于广告投放、广告追踪或用户画像。Bugly 对相关信息的处理规则请参见 <a href="https://static.bugly.qq.com/bugly-sdk-privacy-statement.pdf">Bugly SDK 隐私保护声明</a>。</li>
+        <li>LookinServer：仅在开发调试版本中使用，用于界面调试，不会包含在 App Store 正式发布版本中。</li>
+      </ul>
 
       <h2>3. 我们不收集的内容</h2>
       <ul>
         <li>我们不要求你注册账号。</li>
         <li>我们不收集姓名、手机号、身份证件、通讯录、精确位置等个人敏感信息。</li>
         <li>我们不接入广告追踪，也不会向广告网络出售或共享你的个人数据。</li>
-        <li>我们目前不使用第三方统计分析 SDK 追踪你的使用行为。</li>
+        <li>我们目前不使用第三方统计分析 SDK 追踪你的使用行为；Bugly 仅用于崩溃和稳定性诊断，Alamofire 和 SnapKit 仅作为功能实现库使用。</li>
       </ul>
 
       <h2>4. 数据使用目的</h2>
