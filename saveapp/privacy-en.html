@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AppPin Privacy Policy</title>
+  <title>NightWard Privacy Policy</title>
   <style>
     :root {
       color-scheme: light;
@@ -94,60 +94,67 @@
 <body>
   <main>
     <article>
-      <h1>AppPin Privacy Policy</h1>
-      <p class="meta">Effective Date: May 24, 2026</p>
+      <h1>NightWard Privacy Policy</h1>
+      <p class="meta">Effective Date: June 22, 2026</p>
 
-      <p class="notice">AppPin is a tool for discovering, saving, organizing, and tracking App Store app information. We do not currently operate our own server, provide our own account system, or intentionally collect information that directly identifies you.</p>
+      <p class="notice">NightWard, displayed as 晚安守护 in Simplified Chinese and 晚安守護 in Traditional Chinese, is a local screen time management app built on Apple Screen Time capabilities. We do not provide our own account system, do not operate a developer-hosted server for storing your rules, and do not sell your personal information or use it for advertising tracking.</p>
 
-      <h2>1. Information We Process</h2>
-      <p>To provide favorites, folders, notes, recent views, price tracking, version tracking, and related features, AppPin may store the following information locally on your device:</p>
+      <h2>1. Information Processed on Your Device</h2>
+      <p>To provide screen time rules, management modes, temporary unlocks, reports, Pro entitlement checks, and local configuration features, NightWard may store the following information locally on your device:</p>
       <ul>
-        <li>Apps you save, App Store links, folder names, notes, and grouping information.</li>
-        <li>Download markers, organization status, and other local management information you add.</li>
-        <li>Tracking preferences, such as price change, version update, or rating change preferences.</li>
-        <li>Recent views, last sync time, and similar information used to improve the local app experience and show sync status.</li>
+        <li>Rule names, schedules, enabled status, modes, repeat settings, temporary unlock records, and local report records you create.</li>
+        <li>The apps, categories, or websites you select through the system Screen Time picker. iOS provides protected selection identifiers to the app; we do not read chat content, webpage bodies, photos, contacts, or personal content inside other apps.</li>
+        <li>Management mode, PIN status, authorization prompts, iCloud sync status, free rule quota status, and the most recent local StoreKit Pro entitlement cache.</li>
+        <li>The 4-digit management PIN you choose. The PIN is used only to protect local rule settings and temporary unlocks, and it is not uploaded to a server operated by us.</li>
       </ul>
-      <p>This information is stored on your device by default. AppPin does not upload it to a server operated by us.</p>
 
-      <h2>2. Network Requests and Third-Party Services</h2>
-      <p>AppPin accesses public services provided by Apple to search for apps, show charts, retrieve app details, and refresh tracking information. These requests may include necessary parameters such as search keywords you enter, app identifiers, region codes, and similar query information. Apple's privacy policy governs Apple's processing of that data.</p>
-      <p>If you choose to use iCloud sync, your saved app data may be stored in the iCloud space associated with your Apple ID. Apple provides the storage, sync, and security mechanisms for iCloud.</p>
-      <p>When you send an App Store link to AppPin through the iOS share sheet, AppPin reads the shared link or text to identify the target app and save it to your library. The main app and share extension may share the necessary favorites snapshot through the system-provided App Group container.</p>
-      <p>AppPin uses the following third-party libraries or SDKs:</p>
+      <h2>2. Screen Time, iCloud, and Apple Services</h2>
+      <p>After you grant permission, NightWard uses Screen Time-related capabilities provided by Apple, including FamilyControls, ManagedSettings, and DeviceActivity, to apply system restrictions to the apps, categories, or websites you choose during rule schedules. These system capabilities, permission prompts, and restriction mechanisms are provided by Apple iOS.</p>
+      <p>If you choose to upload or restore iCloud configuration, your rules, modes, management PIN status, and report snapshots may be stored through Apple iCloud Key-Value Store in the iCloud space associated with your Apple ID. Apple provides the storage, sync, security, and deletion mechanisms for iCloud.</p>
+      <p>NightWard does not bypass iOS permissions, does not read the content of restricted apps, and does not monitor chats, calls, text messages, photos, precise location, or contacts.</p>
+
+      <h2>3. In-App Purchases, Subscriptions, and Pro Entitlements</h2>
+      <p>NightWard offers Pro in-app purchases. Free users may use a limited free rule quota; Pro unlocks unlimited rules, iCloud configuration, and admin PIN features. Current Pro products include weekly, quarterly, and yearly auto-renewable subscriptions, plus a lifetime non-consumable purchase. Actual prices, currencies, free trial eligibility, and subscription status are provided by the App Store / StoreKit.</p>
+      <p>Purchases, renewals, cancellations, refunds, billing, taxes, and payment methods are handled by Apple App Store. We use StoreKit 2 to load products, start purchases, restore purchases, and verify current entitlements. To display membership state quickly and enforce feature gates, the app may cache locally whether Pro is active and whether lifetime Pro is owned; final access is still based on valid transactions returned by Apple / StoreKit.</p>
+      <p>We do not operate our own payment server, do not store your full payment card information, do not upload purchase credentials to a developer-operated server, and do not use purchase status for advertising tracking.</p>
+
+      <h2>4. Third-Party SDKs and Libraries</h2>
+      <p>The current version uses the following third-party SDKs or software libraries:</p>
       <ul>
-        <li>Alamofire: used to make network requests so AppPin can access Apple's public services. Alamofire itself does not receive or store your data as an independent third-party service.</li>
-        <li>SnapKit: used to build app interface layouts. SnapKit does not collect, transmit, or store personal information.</li>
         <li>Tencent Bugly SDK: used to detect and fix crashes and improve app stability. Bugly may collect diagnostic information when the app crashes or encounters an exception, such as device model, operating system version, app version, crash logs, exception stack traces, network status, and device identifiers generated by Bugly for stability analysis. We do not use Bugly for advertising, ad tracking, or user profiling. Bugly's handling of this information is described in the <a href="https://static.bugly.qq.com/bugly-sdk-privacy-statement.pdf">Bugly SDK Privacy Statement</a>.</li>
+        <li>SnapKit: used to build app interface layouts. SnapKit does not collect, transmit, or store personal information as an independent third-party service.</li>
+        <li>LookinServer: used only in Debug development builds for interface inspection. It is not used in the App Store release version for data collection or user tracking.</li>
       </ul>
 
-      <h2>3. Information We Do Not Collect</h2>
+      <h2>5. Information We Do Not Collect</h2>
       <ul>
-        <li>We do not require you to create an account.</li>
-        <li>We do not collect your name, phone number, government ID, contacts, precise location, or other sensitive personal information.</li>
-        <li>We do not integrate advertising tracking, and we do not sell or share your personal data with advertising networks.</li>
-        <li>We do not currently use third-party analytics SDKs to track your in-app behavior; Bugly is used only for crash and stability diagnostics, while Alamofire and SnapKit are used only as implementation libraries.</li>
+        <li>We do not require account registration, and we do not collect your name, phone number, government ID, contacts, or precise location.</li>
+        <li>We do not integrate advertising SDKs, conduct cross-app advertising tracking, or sell your personal information.</li>
+        <li>We do not read the specific content of restricted apps or websites, and we do not record chat content, webpage bodies, or media files.</li>
+        <li>Except for Bugly crash diagnostics and StoreKit processing required for in-app purchases, we do not currently use third-party analytics SDKs to track your in-app behavior.</li>
       </ul>
 
-      <h2>4. How We Use Data</h2>
-      <p>AppPin uses local data only to provide app features, including displaying your saved apps, maintaining folders, recording notes and recent views, marking downloaded apps, refreshing price or version changes, saving apps quickly from the share extension, and syncing through iCloud when you choose to do so.</p>
+      <h2>6. How We Use Data</h2>
+      <p>We process the local information described above only to provide features you choose to use, including creating and applying screen time rules, showing selected-scope statistics, protecting family rule settings, generating local reports, configuring iCloud backup and restore, checking Pro entitlements, restoring purchases, and locating and fixing crashes.</p>
 
-      <h2>5. Data Retention and Deletion</h2>
-      <p>Local data remains on your device until you delete it in AppPin, uninstall the app, or clear app data through system settings. If you use iCloud sync, related data may remain in your iCloud space, and you can manage or delete it through iCloud settings, file management, or other methods provided by Apple.</p>
+      <h2>7. Retention, Deletion, and Permission Withdrawal</h2>
+      <p>Local data remains on your device until you clear local data in the app, uninstall the app, or clear app data through system settings. If you use iCloud features, related data may remain in your iCloud space, and you can manage it through iCloud settings or other methods provided by Apple.</p>
+      <p>You can manage Screen Time-related permissions in iOS Settings. If you withdraw permission, NightWard may no longer be able to apply system restrictions, but locally saved rules may remain visible or configurable after you grant permission again. Subscription cancellation, refunds, or lifetime purchase entitlement issues should be handled through Apple's subscription, purchase history, or refund channels.</p>
 
-      <h2>6. Children's Privacy</h2>
-      <p>AppPin is intended for a general audience and does not knowingly collect personal information from children. If you believe a child's information has been saved or synced by mistake, please contact us using the information below.</p>
+      <h2>8. Children and Family Use</h2>
+      <p>NightWard may be used for family screen time management. Parents or guardians should use the app in compliance with applicable laws, Apple Family Sharing, and Screen Time rules, and should explain relevant restrictions to managed family members. We do not knowingly collect personally identifiable information from children.</p>
 
-      <h2>7. Policy Updates</h2>
-      <p>We may update this Privacy Policy to reflect changes in features, legal requirements, or App Store requirements. When we update the policy, we will revise the effective date on this page. For material changes, we will try to provide notice in the app or on the App Store page when appropriate.</p>
+      <h2>9. Policy Updates</h2>
+      <p>We may update this Privacy Policy to reflect changes in features, legal requirements, third-party SDKs, in-app purchase configuration, or App Store review requirements. When we update the policy, we will revise the effective date on this page. For material changes, we will try to provide notice in the app, on the App Store page, or on this page.</p>
 
-      <h2>8. Contact Us</h2>
-      <p>If you have questions about this Privacy Policy or how AppPin handles data, you can contact us at:</p>
+      <h2>10. Contact Us</h2>
+      <p>If you have questions about this Privacy Policy or how NightWard handles data, you can contact us at:</p>
       <ul>
         <li>Email: <a href="mailto:570919107@qq.com">570919107@qq.com</a></li>
         <li>GitHub Issues: <a href="https://github.com/GavinKangDeveloper/GavinKangDeveloper.github.io/issues">https://github.com/GavinKangDeveloper/GavinKangDeveloper.github.io/issues</a></li>
       </ul>
 
-      <p class="links">Related document: <a href="./terms-en.html">AppPin Terms of Use</a></p>
+      <p class="links">Related document: <a href="./terms-en.html">NightWard Terms of Use</a></p>
     </article>
   </main>
 </body>
