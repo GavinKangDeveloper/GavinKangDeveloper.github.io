@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AppPin 隐私政策</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #667085;
+      --line: #e4e7ec;
+      --accent: #2563eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.72;
+    }
+
+    main {
+      width: min(880px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: clamp(24px, 4vw, 48px);
+      box-shadow: 0 18px 48px rgba(15, 23, 42, 0.06);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin: 32px 0 10px;
+      font-size: 20px;
+      line-height: 1.35;
+    }
+
+    p,
+    li {
+      font-size: 16px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin: 0 0 28px;
+    }
+
+    .notice {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+
+    .links {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>AppPin 隐私政策</h1>
+      <p class="meta">生效日期：2026 年 6 月 27 日</p>
+
+      <p class="notice">AppPin 是一款 App Store 应用收藏与轻量管理工具。我们不提供开发者自有账号体系，不运营用于保存用户收藏库的自有服务器，不接入广告追踪 SDK，也不会出售你的个人信息。</p>
+
+      <h2>1. 我们在本机处理的信息</h2>
+      <p>为了提供 App 搜索、收藏、文件夹整理、备注、已下载标记、最近浏览、价格与版本追踪等功能，AppPin 会在你的设备本地保存以下信息：</p>
+      <ul>
+        <li>你收藏的 App 信息，例如 App 名称、App Store ID、开发者、图标、分类、价格、评分、版本和 App Store 链接。</li>
+        <li>你创建的收藏夹、备注、已下载标记、追踪偏好、价格或版本变化记录、最近浏览记录和本地收藏库快照。</li>
+        <li>你选择的 App Store 地区、界面语言、iCloud 同步状态、导入导出状态和其它本机偏好设置。</li>
+        <li>你通过系统分享面板传入的 App Store 链接或文本，用于识别并保存对应 App。</li>
+      </ul>
+
+      <h2>2. App Store、iCloud 与 Apple 服务</h2>
+      <p>AppPin 会使用 Apple 公开的 iTunes Search API、Lookup API 和 Apple Marketing Tools RSS 数据来搜索 App、展示榜单、查看详情，并刷新你收藏 App 的价格或版本信息。相关公开 App 信息由 Apple 或 App 开发者提供。</p>
+      <p>当你主动使用 iCloud 上传或下载功能时，你的收藏库快照可能通过 Apple iCloud Documents / CloudKit 保存到与你 Apple ID 关联的 iCloud 空间中。iCloud 的存储、同步、安全和删除机制由 Apple 提供并受 Apple 条款和隐私政策约束。</p>
+      <p>AppPin 不会自动卸载其它 App，不读取其它 App 内的聊天内容、网页正文、照片、通讯录、精确位置或个人文件，也不会绕过 iOS 权限访问你的设备内容。</p>
+
+      <h2>3. 账号、广告与支付</h2>
+      <p>AppPin 当前不要求你注册账号或登录开发者服务器。我们不接入广告 SDK，不进行跨 App 广告追踪，也不会出售你的个人信息。</p>
+      <p>当前版本不通过开发者自有服务器处理支付卡信息或用户账号信息。如果未来增加内购、订阅或账号能力，我们会在功能上线前更新本隐私政策和 App Store 隐私填报。</p>
+
+      <h2>4. 第三方 SDK 与开源库</h2>
+      <p>当前版本使用以下第三方 SDK 或软件库：</p>
+      <ul>
+        <li>腾讯 Bugly SDK：用于发现并修复崩溃问题、提升 App 稳定性。Bugly 可能在 App 崩溃或异常时收集诊断信息，例如设备型号、操作系统版本、App 版本、崩溃日志、异常堆栈、网络状态以及 Bugly 为稳定性分析生成的设备标识等。我们不会将 Bugly 用于广告投放、广告追踪或用户画像。Bugly 的数据处理规则请参见 <a href="https://static.bugly.qq.com/bugly-sdk-privacy-statement.pdf">Bugly SDK 隐私保护声明</a>。</li>
+        <li>Alamofire：用于实现网络请求。Alamofire 不作为独立第三方服务收集、传输或存储个人信息。</li>
+        <li>SnapKit：用于构建 App 界面布局。SnapKit 不作为独立第三方服务收集、传输或存储个人信息。</li>
+        <li>LookinServer：仅在 Debug 调试构建中用于开发阶段界面检查，不用于 App Store 正式版本的数据收集或用户追踪。</li>
+      </ul>
+
+      <h2>5. 我们不收集的内容</h2>
+      <ul>
+        <li>我们不要求你注册账号，也不收集姓名、手机号、身份证件、通讯录或精确位置。</li>
+        <li>我们不接入广告 SDK，不进行跨 App 广告追踪，也不会出售你的个人信息。</li>
+        <li>我们不读取其它 App 的具体内容，不记录聊天内容、网页正文、照片、媒体文件或个人文件。</li>
+        <li>除 Bugly 的崩溃诊断外，我们当前不使用第三方统计分析 SDK 追踪你的 App 内行为。</li>
+      </ul>
+
+      <h2>6. 数据使用目的</h2>
+      <p>我们处理上述本地数据，仅用于实现你主动使用的功能，包括搜索 App、保存收藏、整理收藏夹、记录备注、展示最近浏览、刷新价格或版本变化、从分享面板快速收藏、导入导出收藏库、执行你主动触发的 iCloud 同步，以及定位并修复崩溃问题。</p>
+
+      <h2>7. 数据保存、删除与撤回授权</h2>
+      <p>本地数据会保存在你的设备上，直到你在 App 内清空本机数据、卸载 App，或通过系统方式清除 App 数据。如果你使用 iCloud 同步，相关快照可能仍保存在你的 iCloud 空间中，你可以通过 Apple 提供的 iCloud 设置或相关系统能力进行管理。</p>
+      <p>你可以停止使用 iCloud 同步、删除本地数据或卸载 App。撤回网络访问可能会影响 App 搜索、榜单、详情刷新和价格或版本追踪等依赖公开 App Store 数据的功能。</p>
+
+      <h2>8. 儿童使用</h2>
+      <p>AppPin 面向一般用户提供 App 收藏和整理能力。我们不会主动收集儿童可识别个人身份的信息。父母或监护人应根据所在地法律、Apple App Store 规则和家庭设备管理要求决定儿童是否适合使用本 App。</p>
+
+      <h2>9. 政策更新</h2>
+      <p>我们可能会根据功能变化、法律法规、第三方 SDK、iCloud 能力或 App Store 审核要求更新本隐私政策。更新后，我们会修改本页面的生效日期；如发生重大变化，我们会尽量在 App 内、App Store 页面或本页面中提示。</p>
+
+      <h2>10. 联系我们</h2>
+      <p>如果你对本隐私政策或数据处理方式有疑问，可以通过以下方式与我们联系：</p>
+      <ul>
+        <li>邮箱：<a href="mailto:570919107@qq.com">570919107@qq.com</a></li>
+        <li>GitHub Issues：<a href="https://github.com/GavinKangDeveloper/GavinKangDeveloper.github.io/issues">https://github.com/GavinKangDeveloper/GavinKangDeveloper.github.io/issues</a></li>
+      </ul>
+
+      <p class="links">相关文档：<a href="./terms.html">AppPin 使用条款</a></p>
+    </article>
+  </main>
+</body>
+</html>
